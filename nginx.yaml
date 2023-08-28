@@ -1,9 +1,11 @@
 - hosts: Hosts
   tasks:
     - name: install nginx
-      apt: name=nginx state=latest
+      ansible.builtin.yum:
+        name: nginx
+        state: installed 
     - name: start nginx
-      service:
+      ansible.builtin.service:
         name: nginx
         state: startred  
 
