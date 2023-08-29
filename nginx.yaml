@@ -1,10 +1,11 @@
- hosts: mogodb
-  become: yes
-  tasks:
-    # - name: install nginx
-    #   ansible.builtin.yum:
-    #     name: nginx
-    #     state: installed 
+ - name: nginx install and remove
+   hosts: mogodb
+    become: yes
+    tasks:
+    - name: install nginx
+      ansible.builtin.yum:
+        name: nginx
+        state: installed 
     - name: started nginx
       ansible.builtin.service:
         name: nginx
