@@ -1,6 +1,6 @@
 - name: Installing ngin and start serice
   hosts: mongodb
-  becomes: yes # root access
+  become: yes # root access
   tasks:
   - name: Install nginx
     ansible.buitin.yum:
