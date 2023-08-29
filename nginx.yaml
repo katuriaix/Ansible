@@ -1,4 +1,4 @@
-- hosts: srinu
+- hosts: localhost
   tasks:
     - name: install nginx
       ansible.builtin.yum:
