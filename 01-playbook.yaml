@@ -1,0 +1,6 @@
+- name: ping the sedrver
+  hosts: localhost
+
+  tasks: 
+  - name: ping the servers
+    ansible.builtin.ping:
