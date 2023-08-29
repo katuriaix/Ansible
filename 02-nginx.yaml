@@ -4,8 +4,8 @@
   tasks:
   - name: Install nginx
     ansible.buitin.yum:
-    name: nginx
-    state: installed
+      name: nginx
+      state: installed
 
   - name: Start nginx
     ansible.builtin.service:
