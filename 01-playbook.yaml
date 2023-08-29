@@ -1,5 +1,5 @@
-- name: ping the sedrver
-  hosts: localhost
+- name: ping the servers
+  hosts: Hosts
 
   tasks: 
   - name: ping the servers
