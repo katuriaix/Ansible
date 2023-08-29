@@ -5,8 +5,8 @@
     #   ansible.builtin.yum:
     #     name: nginx
     #     state: installed 
-    - name: remove nginx
+    - name: stop nginx
       ansible.builtin.service:
         name: nginx
-        state: removed  
+        state: stopped  
 
