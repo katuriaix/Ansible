@@ -2,11 +2,11 @@
   hosts: localhost
   become: yes #this will give root access
   tasks:
-  - name: Install nginx
-    ansible.builtin.yum:
-      name: nginx
-      state: installed
+  # - name: Install nginx
+  #   ansible.builtin.yum:
+  #     name: nginx
+  #     state: installed
   - name: start nginx
     ansible.builtin.service:
       name: nginx
-      state: started
+      state: stopped
