@@ -1,4 +1,4 @@
-- hosts: mogodb
+ hosts: mogodb
   become: yes
   tasks:
     # - name: install nginx
